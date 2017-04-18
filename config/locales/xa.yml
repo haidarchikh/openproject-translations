@@ -1,4 +1,4 @@
----
+issues---
 xa:
   no_results_title_text: There is currently nothing to display.
   activities:
@@ -57,7 +57,7 @@ xa:
   deprecations:
     old_timeline: |-
       This timelines module will be replaced by an interactive timelines view embedded into
-      the work packages module. This module is being removed from OpenProject 7.0.
+      the issues module. This module is being removed from OpenProject 7.0.
       <br/>
       Please note that all data within this module will NOT be migrated to the new view,
       please make all necessary preparations to recreate the information in the new view.
@@ -133,7 +133,7 @@ xa:
       reset: Reset to defaults
   versions:
     overview:
-      no_results_title_text: There are currently no work packages assigned to this
+      no_results_title_text: There are currently no issues assigned to this
         version.
   wiki:
     no_results_title_text: There are currently no wiki pages.
@@ -148,14 +148,14 @@ xa:
         packages from multiple projects
     list_simple:
       assigned:
-        no_results_title_text: There are currently no work packages assigned to me.
+        no_results_title_text: There are currently no issues assigned to me.
       reported:
-        no_results_title_text: There are currently no work packages that I have reported.
+        no_results_title_text: There are currently no issues that I have reported.
       responsible:
-        no_results_title_text: There are currently no work packages that I am responsible
+        no_results_title_text: There are currently no issues that I am responsible
           for.
       watched:
-        no_results_title_text: There are currently no work packages that I am watching.
+        no_results_title_text: There are currently no issues that I am watching.
     summary:
       reports:
         category:
@@ -179,16 +179,16 @@ xa:
     deleted: Kontot har tagits bort
     deletion_info:
       data_consequences:
-        other: Of the data the user created (e.g. email, preferences, work packages,
+        other: Of the data the user created (e.g. email, preferences, issues,
           wiki entries) as much as possible will be deleted. Note however, that data
-          like work packages and wiki entries can not be deleted without impeding
+          like issues and wiki entries can not be deleted without impeding
           the work of the other users. Such data is hence reassigned to an account
           called "Deleted user". As the data of every deleted account is reassigned
           to this account it will not be possible to distinguish the data the user
           created from the data of another deleted account.
-        self: Of the data you created (e.g. email, preferences, work packages, wiki
+        self: Of the data you created (e.g. email, preferences, issues, wiki
           entries) as much as possible will be deleted. Note however, that data like
-          work packages and wiki entries can not be deleted without impeding the work
+          issues and wiki entries can not be deleted without impeding the work
           of the other users. Such data is hence reassigned to an account called "Deleted
           user". As the data of every deleted account is reassigned to this account
           it will not be possible to distinguish the data you created from the data
@@ -298,10 +298,10 @@ xa:
         encoded_token: Enterprise support token
       relation:
         delay: Fördröjning
-        from: Arbetspaket
+        from: ärenden
         to: Relaterat arbetspaketet
       status:
-        is_closed: Arbetspaket stängt
+        is_closed: ärenden stängt
       journal:
         notes: Anteckningar
       member:
@@ -315,7 +315,7 @@ xa:
         responsible: Ansvarig
         types: Typer
         versions: Versioner
-        work_packages: Arbetspaket
+        work_packages: ärenden
       query:
         column_names: Kolumner
         group_by: Gruppera resultat efter
@@ -323,7 +323,7 @@ xa:
       repository:
         url: URL
       role:
-        assignable: Work packages can be assigned to users and groups in possession
+        assignable: issues can be assigned to users and groups in possession
           of this role in the respective project
       time_entry:
         activity: Aktivitet
@@ -401,7 +401,7 @@ xa:
       messages:
         accepted: måste accepteras.
         blank: kan inte vara tomt.
-        cant_link_a_work_package_with_a_descendant: Ett arbetspaket kan inte kopplas
+        cant_link_a_work_package_with_a_descendant: Ett ärenden kan inte kopplas
           till någon av dess underaktiviteter.
         circular_dependency: Detta förhållande skulle skapa ett cirkelberoende.
         confirmation: matchar inte %{attribute}.
@@ -442,7 +442,7 @@ xa:
         project:
           attributes:
             types:
-              in_use_by_work_packages: 'still in use by work packages: %{types}'
+              in_use_by_work_packages: 'still in use by issues: %{types}'
         project_association:
           identical_projects: Beroende kan inte skapas mellan ett projekt och sig
             själv.
@@ -459,7 +459,7 @@ xa:
           not_whitelisted: tillåts inte av konfigurationen.
           no_directory: är inte en katalog.
         work_package:
-          is_not_a_valid_target_for_time_entries: 'Arbetspaket #%{id} är inte ett
+          is_not_a_valid_target_for_time_entries: 'ärenden #%{id} är inte ett
             giltigt mål för omfördelning av tidrapporterna.'
           attributes:
             due_date:
@@ -478,7 +478,7 @@ xa:
             priority_id:
               only_active_priorities_allowed: måste vara aktiv.
             category:
-              only_same_project_categories_allowed: Kategorin för ett arbetspaket
+              only_same_project_categories_allowed: Kategorin för ett ärenden
                 måste tillhöra samma projekt som arbetspaketet.
               does_not_exist: Den angivna kategorin finns inte.
             estimated_hours:
@@ -538,7 +538,7 @@ xa:
       wiki: Wiki
       wiki_page: Wiki-sida
       workflow: Arbetsflöde
-      work_package: Arbetspaket
+      work_package: ärenden
   errors:
     header_invalid_fields: 'Det fanns problem med följande fält:'
     field_erroneous_label: |-
@@ -554,7 +554,7 @@ xa:
     attachments: Bilagor
     author: Författare
     base: 'Allmänt fel:'
-    blocks_ids: ID:n för blockerade arbetspaket
+    blocks_ids: ID:n för blockerade ärenden
     category: Kategori
     comment: Kommentar
     comments: Kommentar
@@ -576,7 +576,7 @@ xa:
     is_default: Standardvärde
     is_for_all: För alla projekt
     is_public: Offentlig
-    issue: Arbetspaket
+    issue: ärenden
     lastname: Efternamn
     login: Användarnamn
     mail: E-post
@@ -596,7 +596,7 @@ xa:
     updated_on: Uppdaterat den
     user: Användare
     version: Version
-    work_package: Arbetspaket
+    work_package: ärenden
   button_add: Lägg till
   button_add_member: Lägg till medlem
   button_add_watcher: Lägg till bevakare
@@ -809,7 +809,7 @@ xa:
   default_role_non_member: Icke medlem
   default_role_reader: Läsare
   default_role_member: Medlem
-  default_type: Arbetspaket
+  default_type: ärenden
   default_type_bug: Bugg
   default_type_deliverable: Leverabel
   default_type_epic: Epic
@@ -821,7 +821,7 @@ xa:
   description_active: Aktiv?
   description_attachment_toggle: Visa/Dölj bilagor
   description_autocomplete: 'Det här fältet använder komplettera automatiskt. Medan
-    du skriver rubriken på ett arbetspaket får du en lista över möjliga alternative.
+    du skriver rubriken på ett ärenden får du en lista över möjliga alternative.
     Välj ett med hjälp av piltangenterna och markera den med TAB eller ENTER. Alternativt
     kan du ange arbetspaketets nummer direkt.
 
@@ -843,14 +843,14 @@ xa:
   description_message_content: Meddelandets innehåll
   description_my_project: Du är medlem
   description_notes: Anteckningar
-  description_parent_work_package: Överordnat arbetspaket av nuvarande
+  description_parent_work_package: Överordnat ärenden av nuvarande
   description_project_scope: Sökningens omfattning
   description_query_sort_criteria_attribute: Sorteringsattribut
   description_query_sort_criteria_direction: Sorteringsriktning
   description_search: Sökfält
-  description_select_work_package: Välj arbetspaket
+  description_select_work_package: Välj ärenden
   description_selected_columns: Markerade kolumner
-  description_sub_work_package: Arbetspaket som är underarbetspaket av nuvarande
+  description_sub_work_package: ärenden som är underarbetspaket av nuvarande
   description_toc_toggle: Visa/Dölj innehållsförteckning
   description_wiki_subpages_reassign: Välj ny överordnad sida
   direction: Från vänster till höger
@@ -866,11 +866,11 @@ xa:
   enumeration_reported_project_statuses: Rapporterad projektstatus
   error_can_not_archive_project: Detta projekt kan inte arkiveras
   error_can_not_delete_custom_field: Det går inte att ta bort anpassat fält
-  error_can_not_delete_type: Denna typ innehåller arbetspaket och kan inte tas bort.
+  error_can_not_delete_type: Denna typ innehåller ärenden och kan inte tas bort.
   error_can_not_delete_standard_type: Standardtyper kan inte tas bort.
   error_can_not_invite_user: Failed to send invitation to user.
   error_can_not_remove_role: Denna roll används och kan inte tas bort.
-  error_can_not_reopen_work_package_on_closed_version: Ett arbetspaket som tilldelats
+  error_can_not_reopen_work_package_on_closed_version: Ett ärenden som tilldelats
     en stängd version kan inte öppnas igen
   error_check_user_and_role: Välj en användare och en roll.
   error_cookie_missing: The OpenProject cookie is missing. Please ensure that cookies
@@ -888,9 +888,9 @@ xa:
   error_work_package_not_found_in_project: Arbetspaketet hittades inte eller hör inte
     till detta projekt
   error_must_be_project_member: måste vara projektmedlem
-  error_no_default_work_package_status: Inget standardvärde för status för arbetspaket
+  error_no_default_work_package_status: Inget standardvärde för status för ärenden
     har definieras. Vänligen kontrollera din konfiguration (gå till "Administration->
-    arbetspaket status").
+    ärenden status").
   error_no_type_in_project: Ingen typ associerad till detta projekt. Kontrollera projektinställningarna.
   error_omniauth_registration_timed_out: Registrering via en extern autentiseringstjänst
     svarade inte. Försök igen.
@@ -898,7 +898,7 @@ xa:
     %{value}'
   error_scm_not_found: Den posten eller revision finns inte i versionsarkivet.
   error_unable_delete_status: Arbetspaketsstatusen kan inte raderas eftersom det används
-    av minst ett arbetspaket.
+    av minst ett ärenden.
   error_unable_delete_default_status: Det går inte att radera standardvalet för arbetspaketsstatus.
     Var god väl en annan arbetspaketsstatus som standardval innan du raderar den befintliga.
   error_unable_to_connect: Kan inte ansluta (%{value})
@@ -923,8 +923,8 @@ xa:
     reply: Svarade
     time_entry: Tidrapport redigerades
     wiki_page: Wiki-sida redigerades
-    work_package_closed: Arbetspaket stängdes
-    work_package_edit: Arbetspaket redigerades
+    work_package_closed: ärenden stängdes
+    work_package_edit: ärenden redigerades
     work_package_note: Anteckning lades till arbetspaketet
   export:
     format:
@@ -992,7 +992,7 @@ xa:
   label_add_another_file: Lägga till en annan fil
   label_add_columns: Lägga till markerade kolumner
   label_add_note: Lägga till en anteckning
-  label_add_related_work_packages: Lägg till relaterade arbetspaket
+  label_add_related_work_packages: Lägg till relaterade ärenden
   label_add_subtask: Lägg till deluppgift
   label_added: lagt till
   label_added_time_by: Lagts till av %{author} %{age} sen
@@ -1016,7 +1016,7 @@ xa:
   label_applied_status: Tillämpad status
   label_archive_project: Archive project
   label_ascending: Stigande
-  label_assigned_to_me_work_packages: Arbetspaket som tilldelats till mig
+  label_assigned_to_me_work_packages: ärenden som tilldelats till mig
   label_associated_revisions: Kopplade revideringar
   label_attachment_delete: Ta bort fil
   label_attachment_new: Ny fil
@@ -1043,7 +1043,7 @@ xa:
   label_boolean: Booleskt värde
   label_branch: Gren
   label_browse: Bläddra
-  label_bulk_edit_selected_work_packages: Redigera markerade arbetspaket i bulk
+  label_bulk_edit_selected_work_packages: Redigera markerade ärenden i bulk
   label_calendar: Kalender
   label_calendar_show: Visa kalendern
   label_category: Kategori
@@ -1229,7 +1229,7 @@ xa:
   label_months_from: månader från
   label_more: Mer
   label_more_than_ago: mer än dagar sedan
-  label_move_work_package: Flytta arbetspaket
+  label_move_work_package: Flytta ärenden
   label_my_account: Mitt konto
   label_my_account_data: Min kontoinformation
   label_my_page: Min sida
@@ -1314,7 +1314,7 @@ xa:
   label_registration_activation_by_email: aktivering av konto via E-post
   label_registration_automatic_activation: automatisk kontoaktivering
   label_registration_manual_activation: manuell kontoaktivering
-  label_related_work_packages: Relaterat arbetspaket
+  label_related_work_packages: Relaterat ärenden
   label_relates: Relaterad till
   label_relates_to: Relaterad till
   label_relation_delete: Ta bort relation
@@ -1326,7 +1326,7 @@ xa:
   label_report: Rapport
   label_report_bug: Rapportera ett fel
   label_report_plural: Rapporter
-  label_reported_work_packages: Rapporterade arbetspaket
+  label_reported_work_packages: Rapporterade ärenden
   label_reporting: Rapporterar
   label_reporting_plural: Rapporter
   label_repository: Versionsarkiv
@@ -1334,7 +1334,7 @@ xa:
   label_repository_plural: Versionsarkiv
   label_required: required
   label_requires: requires
-  label_responsible_for_work_packages: Arbetspaket jag är ansvarig för
+  label_responsible_for_work_packages: ärenden jag är ansvarig för
   label_result_plural: Resultat
   label_reverse_chronological_order: I omvänd kronologisk ordning
   label_revision: Revision
@@ -1343,7 +1343,7 @@ xa:
   label_roadmap: Färdplan
   label_roadmap_edit: Redigera färdplan %{name}
   label_roadmap_due_in: Klar om %{value}
-  label_roadmap_no_work_packages: Inga arbetspaket för den här versionen
+  label_roadmap_no_work_packages: Inga ärenden för den här versionen
   label_roadmap_overdue: "%{value} sent"
   label_role_and_permissions: Roller och behörigheter
   label_role_new: Ny roll
@@ -1369,7 +1369,7 @@ xa:
   label_start_to_start: början till början
   label_statistics: Statistik
   label_status: Status
-  label_status_updated: Status för arbetspaket uppdaterad
+  label_status_updated: Status för ärenden uppdaterad
   label_stay_logged_in: Fortsätt vara inloggad
   label_storage_free_space: Remaining disk space
   label_storage_used_space: Used disk space
@@ -1428,7 +1428,7 @@ xa:
   label_view_all_revisions: Visa alla revisioner
   label_view_diff: Visa skillnader
   label_view_revisions: Visa revisioner
-  label_watched_work_packages: Bevakade arbetspaket
+  label_watched_work_packages: Bevakade ärenden
   label_week: Vecka
   label_wiki_content_added: Wiki-sidan tillagd
   label_wiki_content_updated: Wiki-sidan uppdaterad
@@ -1444,30 +1444,30 @@ xa:
   label_wiki_show_menu_item: Visa som menyobjekt i projektets meny
   label_wiki_show_new_page_link: Visa undermenyn "Skapa ny underordnad sida"
   label_wiki_show_submenu_item: 'Visa som undermenyalternativ för '
-  label_work_package: Arbetspaket
-  label_work_package_added: Arbetspaket lades till
+  label_work_package: ärenden
+  label_work_package_added: ärenden lades till
   label_work_package_category_new: Ny kategori
   label_work_package_category_plural: Arbetspaketkategorier
   label_work_package_hierarchy: Work package hierarchy
-  label_work_package_new: Nya arbetspaket
-  label_work_package_note_added: Anteckning lades till arbetspaket
-  label_work_package_edit: Redigera arbetspaket %{name}
-  label_work_package_plural: Arbetspaketen
+  label_work_package_new: Nya ärenden
+  label_work_package_note_added: Anteckning lades till ärenden
+  label_work_package_edit: Redigera ärenden %{name}
+  label_work_package_plural: Äremden
   label_work_package_priority_updated: Arbetspaketets prioritet uppdaterad
   label_work_package_status: Arbetspaketstatus
   label_work_package_status_new: Ny status
   label_work_package_status_plural: Arbetspaketstatus
   label_work_package_types: Work package types
   label_work_package_updated: Arbetspaketet uppdaterat
-  label_work_package_tracking: Arbetspaketsspårning
-  label_work_package_view_all: Visa alla arbetspaket
-  label_work_package_view_all_assigned_to_me: Visa alla arbetspaket som tilldelats
+  label_work_package_tracking: ärendehantering
+  label_work_package_view_all: Visa alla ärenden
+  label_work_package_view_all_assigned_to_me: Visa alla ärenden som tilldelats
     till mig
-  label_work_package_view_all_reported_by_me: Visa alla arbetspaket som rapporterats
+  label_work_package_view_all_reported_by_me: Visa alla ärenden som rapporterats
     av mig
-  label_work_package_view_all_responsible_for: View all work packages that I am responsible
+  label_work_package_view_all_responsible_for: View all issues that I am responsible
     for
-  label_work_package_view_all_watched: Visa alla bevakade arbetspaket
+  label_work_package_view_all_watched: Visa alla bevakade ärenden
   label_work_package_watchers: Bevakare
   label_workflow: Arbetsflöde
   label_workflow_plural: Arbetsflöden
@@ -1506,14 +1506,14 @@ xa:
   label_keyboard_shortcut_go_my_page: Go to my page
   label_keyboard_shortcut_show_help: Visa detta hjälpmeddelande
   label_keyboard_shortcut_go_overview: Gå till projektöversikten
-  label_keyboard_shortcut_go_work_package: Gå till projektets arbetspaket
+  label_keyboard_shortcut_go_work_package: Gå till projektets ärenden
   label_keyboard_shortcut_go_wiki: Gå till projektets wiki
   label_keyboard_shortcut_go_activity: Gå till projektaktiviteter
   label_keyboard_shortcut_go_calendar: Gå till projektkalendern
   label_keyboard_shortcut_go_news: Gå till projektnyheter
   label_keyboard_shortcut_go_timelines: Gå till tidslinjer
-  label_keyboard_shortcut_new_work_package: Skapa nya arbetspaket
-  label_keyboard_shortcut_details_package: Visa informationsfönstret för arbetspaket
+  label_keyboard_shortcut_new_work_package: Skapa nya ärenden
+  label_keyboard_shortcut_details_package: Visa informationsfönstret för ärenden
   label_keyboard_shortcut_go_edit: Gå till redigering av den aktuella artikeln (på
     detaljsidor endast)
   label_keyboard_shortcut_open_more_menu: Öppna mer-menyn (på detaljsidor endast)
@@ -1537,14 +1537,14 @@ xa:
     logga in.
   mail_body_lost_password: 'För att ändra ditt lösenord, klicka på följande länk:'
   mail_body_register: 'För att aktivera ditt konto, klicka på följande länk:'
-  mail_body_reminder: "%{count} arbetspaket som är tilldelade till dig förfaller de
+  mail_body_reminder: "%{count} ärenden som är tilldelade till dig förfaller de
     närmaste %{days} dagarna:"
   mail_body_wiki_content_added: Wiki-sidan '%{id}' har lagts till av %{author}.
   mail_body_wiki_content_updated: "'%{id}' wiki-sidan har uppdaterats av %{author}."
   mail_subject_account_activation_request: "%{value}} kontoaktiveringsbegäran"
   mail_subject_lost_password: Ditt %{value} lösenord
   mail_subject_register: Din %{value} kontoaktivering
-  mail_subject_reminder: "%{count} arbetspaket förfaller inom de %{days} dagarna"
+  mail_subject_reminder: "%{count} ärenden förfaller inom de %{days} dagarna"
   mail_subject_wiki_content_added: "'%{id}' wiki-sida har lagts till"
   mail_subject_wiki_content_updated: "'%{id}' wiki-sidan har uppdaterats"
   more_actions: Fler funktioner
@@ -1585,7 +1585,7 @@ xa:
     were deleted.
   notice_email_error: Ett fel uppstod när E-post skulle skickas (%{value})
   notice_email_sent: Ett E-postmeddelande skickades till %{value}
-  notice_failed_to_save_work_packages: 'Det gick inte att spara %{count} arbetspaket
+  notice_failed_to_save_work_packages: 'Det gick inte att spara %{count} ärenden
     av %{total} valt: %{ids}.'
   notice_failed_to_save_members: 'Det gick inte att spara medlem(mar): %{errors}.'
   notice_feeds_access_key_reseted: Din RSS-åtkomstnyckel återställdes.
@@ -1660,8 +1660,8 @@ xa:
     text_show_again: You can restart this video from the help menu
     welcome: Welcome to OpenProject
   permission_add_work_package_notes: Lägg till anteckningar
-  permission_add_work_packages: Add work packages (also allows to add attachments
-    to all work packages)
+  permission_add_work_packages: Add issues (also allows to add attachments
+    to all issues)
   permission_add_messages: Publicera meddelanden
   permission_add_project: Skapa projekt
   permission_add_subprojects: Skapa delprojekt
@@ -1672,7 +1672,7 @@ xa:
   permission_commit_access: Read/write access to repository (commit)
   permission_copy_projects: Kopiera projekt
   permission_delete_work_package_watchers: Ta bort bevakare
-  permission_delete_work_packages: Ta bort arbetspaket
+  permission_delete_work_packages: Ta bort ärenden
   permission_delete_messages: Ta bort meddelanden
   permission_delete_own_messages: Ta bort egna meddelanden
   permission_delete_project_associations: Ta bort projektberoenden
@@ -1681,7 +1681,7 @@ xa:
   permission_delete_wiki_pages: Ta bort wikisidor
   permission_delete_wiki_pages_attachments: Ta bort bifogade filer
   permission_edit_work_package_notes: Redigera anteckningar
-  permission_edit_work_packages: Redigera arbetspaket
+  permission_edit_work_packages: Redigera Äremden
   permission_edit_messages: Redigera meddelanden
   permission_edit_own_work_package_notes: Redigera egna anteckningar
   permission_edit_own_messages: Redigera egna meddelanden
@@ -1692,13 +1692,13 @@ xa:
   permission_edit_time_entries: Redigera tidrapporter
   permission_edit_timelines: Redigera tidslinjer
   permission_edit_wiki_pages: Redigera wiki-sidor
-  permission_export_work_packages: Export work packages
+  permission_export_work_packages: Export issues
   permission_export_wiki_pages: Exportera wiki-sidor
   permission_list_attachments: Lista bifogade filer
   permission_log_time: Tidrapportera
   permission_manage_boards: Hantera forum
-  permission_manage_categories: Hantera kategorier för arbetspaket
-  permission_manage_work_package_relations: Hantera relationer för arbetspaket
+  permission_manage_categories: Hantera kategorier för ärenden
+  permission_manage_work_package_relations: Hantera relationer för ärenden
   permission_manage_members: Hantera medlemmar
   permission_manage_news: Hantera nyheter
   permission_manage_project_activities: Hantera projektaktivitet
@@ -1708,7 +1708,7 @@ xa:
   permission_manage_versions: Hantera versioner
   permission_manage_wiki: Hantera wiki
   permission_manage_wiki_menu: Hantera wiki-menyn
-  permission_move_work_packages: Flytta arbetspaket
+  permission_move_work_packages: Flytta ärenden
   permission_protect_wiki_pages: Skydda wiki-sidor
   permission_rename_wiki_pages: Byt namn på wiki-sidor
   permission_save_queries: Spara frågor
@@ -1719,7 +1719,7 @@ xa:
   permission_view_commit_author_statistics: Visa statistik över incheckningar per
     författare
   permission_view_work_package_watchers: Visa lista med bevakare
-  permission_view_work_packages: View work packages
+  permission_view_work_packages: View issues
   permission_view_messages: Visa meddelanden
   permission_view_members: View members
   permission_view_project_associations: Visa projektberoenden
@@ -1747,7 +1747,7 @@ xa:
   project_module_activity: Aktivitet
   project_module_boards: Forum
   project_module_calendar: Kalender
-  project_module_work_package_tracking: Arbetspaketsspårning
+  project_module_work_package_tracking: ärendehantering
   project_module_news: Nyheter
   project_module_repository: Versionsarkiv
   project_module_time_tracking: Tidredovisning
@@ -1920,7 +1920,7 @@ xa:
   setting_commit_logtime_activity_id: Aktivitet för tidrapport
   setting_commit_logtime_enabled: Aktivera tidrapportering
   setting_commit_ref_keywords: Nyckelord för referens
-  setting_cross_project_work_package_relations: Tillåt relationer mellan arbetspaket
+  setting_cross_project_work_package_relations: Tillåt relationer mellan ärenden
     i olika projekt
   setting_date_format: Datumformat
   setting_default_language: Standardspråk
@@ -1928,7 +1928,7 @@ xa:
   setting_default_projects_modules: Standardmoduler för nya projekt
   setting_default_projects_public: Nya projekt är offentliga som standard
   setting_diff_max_lines_displayed: Max antal diff rader som visas
-  setting_display_subprojects_work_packages: Visa arbetspaket för delprojekt på huvudprojekt
+  setting_display_subprojects_work_packages: Visa ärenden för delprojekt på huvudprojekt
     som standard
   setting_emails_footer: E-post sidfot
   setting_emails_header: E-post sidhuvud
@@ -1941,15 +1941,15 @@ xa:
   setting_gravatar_enabled: Använda Gravatar användarikoner
   setting_host_name: Värdnamn
   setting_work_package_done_ratio: Beräkna arbetspaketets andel avklarat med
-  setting_work_package_done_ratio_field: Använd fältet arbetspaket
+  setting_work_package_done_ratio_field: Använd fältet ärenden
   setting_work_package_done_ratio_status: Använd fältet arbetspaketsstatus
   setting_work_package_done_ratio_disabled: Inaktivera (dölj andel klart)
   setting_work_package_list_default_columns: Visa som standard
   setting_work_package_list_summable_columns: Kan summeras
-  setting_work_package_properties: Egenskaper för arbetspaket
+  setting_work_package_properties: Egenskaper för ärenden
   setting_work_package_startdate_is_adddate: Använda aktuellt datum som startdatum
-    för nya arbetspaket
-  setting_work_packages_export_limit: Gräns för export av arbetspaket
+    för nya ärenden
+  setting_work_packages_export_limit: Gräns för export av ärenden
   setting_journal_aggregation_time_minutes: Visa journaler som aggregerade inom
   setting_log_requesting_user: Logga användarnamn, namn och E-postadress för alla
     anrop
@@ -1958,7 +1958,7 @@ xa:
   setting_mail_handler_api_enabled: Aktivera web-tjänsten för inkommande e-post
   setting_mail_handler_api_description: E-mail web handler gör det möjligt för OpenProject
     att ta emot e-postmeddelanden som innehåller specifika kommandon som en instrumentation
-    mekanism (e.g., skapa och uppdatera arbetspaket).
+    mekanism (e.g., skapa och uppdatera ärenden).
   setting_mail_handler_api_key: API-nyckel
   setting_mail_handler_body_delimiters: Trunkera E-post efter en av dessa rader
   setting_mail_handler_body_delimiter_regex: Truncate emails matching this regex
@@ -2028,10 +2028,10 @@ xa:
     to resources in OpenProject.
   text_analyze: 'Vidare analys: %{subject}'
   text_are_you_sure: Är du säker?
-  text_are_you_sure_with_children: Ta bort arbetspaket och alla underarbetspaket?
+  text_are_you_sure_with_children: Ta bort ärenden och alla underarbetspaket?
   text_assign_to_project: Tilldela till projektet
   text_form_configuration: 'You can customize which attributes will be displayed in
-    forms for work packages of this type. You can freely group the attributes to reflect
+    forms for issues of this type. You can freely group the attributes to reflect
     the needs for your domain. By default fields will only be shown in the collapsed
     work package view if they have a value. Fields that are ''Always displayed'' will
     be visibile even if they don''t have a value.
@@ -2046,7 +2046,7 @@ xa:
   text_default_encoding: 'Standard: UTF-8'
   text_destroy: Ta bort
   text_destroy_with_associated: 'Det finns ytterligare objekt kopplade med det/de
-    arbetspaket som ska tas bort. Dessa objekt är av följande typer:'
+    ärenden som ska tas bort. Dessa objekt är av följande typer:'
   text_destroy_what_to_do: Vad vill du göra?
   text_diff_truncated: "... Denna diff trunkerades eftersom den överskrider den maximala
     storleken som kan visas."
@@ -2063,14 +2063,14 @@ xa:
   text_hours_between: Between %{min} and %{max} hours.
   text_work_package_added: Arbetspaketet %{id} har rapporterats av %{author}.
   text_work_package_category_destroy_assignments: Ta bort kategoritilldelningar
-  text_work_package_category_destroy_question: Vissa arbetspaket (%{count}) har tilldelas
+  text_work_package_category_destroy_question: Vissa ärenden (%{count}) har tilldelas
     till denna kategori. Vad vill du göra?
-  text_work_package_category_reassign_to: Tilldela arbetspaket till denna kategori
+  text_work_package_category_reassign_to: Tilldela ärenden till denna kategori
   text_work_package_updated: Arbetspaketet %{id} har uppdaterats av %{author}.
   text_work_package_watcher_added: You have been added as a watcher to Work package
     %{id} by %{watcher_setter}.
-  text_work_packages_destroy_confirmation: Är du säker du vill ta bort det valda arbetspaket(paketen)?
-  text_work_packages_ref_in_commit_messages: Referenser och fixande av arbetspaket
+  text_work_packages_destroy_confirmation: Är du säker du vill ta bort det valda ärenden(paketen)?
+  text_work_packages_ref_in_commit_messages: Referenser och fixande av ärenden
     i incheckningsmeddelanden
   text_journal_added: "%{label} %{value} lades till"
   text_journal_aggregation_time_explanation: Kombinera journaler för visning om deras
@@ -2090,7 +2090,7 @@ xa:
   text_min_max_length_info: 0 innebär ingen begränsning
   text_no_roles_defined: There are no roles defined.
   text_no_access_tokens_configurable: There are no access tokens which can be configured.
-  text_no_configuration_data: Roller, typer, status för arbetspaket och arbetsflöden
+  text_no_configuration_data: Roller, typer, status för ärenden och arbetsflöden
     har inte konfigurerats ännu. Det rekommenderas starkt att läsa in standardkonfigurationen.
     Du kommer att kunna ändra dem när de är initialiserade.
   text_no_notes: There are no comments available for this work package.
@@ -2116,9 +2116,9 @@ xa:
     checkboxes in the table. When clicking on the button below the table the differences
     are shown.
   text_time_logged_by_changeset: Tillämpad i uppdatering %{value}.
-  text_tip_work_package_begin_day: arbetspaket som börjar denna dag
-  text_tip_work_package_begin_end_day: arbetspaket som börjar och slutar denna dag
-  text_tip_work_package_end_day: arbetspaket som slutar denna dag
+  text_tip_work_package_begin_day: ärenden som börjar denna dag
+  text_tip_work_package_begin_end_day: ärenden som börjar och slutar denna dag
+  text_tip_work_package_end_day: ärenden som slutar denna dag
   text_type_no_workflow: Inget arbetsflöde har definierats för denna typ
   text_unallowed_characters: Otillåtet tecken
   text_user_invited: The user has been invited and is pending registration.
@@ -2198,13 +2198,13 @@ xa:
         timeframe_end: 'Tidsram slut '
         compare_to_relative: 'Värdet av relativa jämförelsen '
         compare_to_absolute: 'Värdet av den absoluta jämförelsen '
-        planning_element_time_relative_one: 'Starten för arbetspaketen inom en viss
+        planning_element_time_relative_one: 'Starten för Äremden inom en viss
           tidsram '
-        planning_element_time_relative_two: 'Slutet för arbetspaketen inom en viss
+        planning_element_time_relative_two: 'Slutet för Äremden inom en viss
           tidsram '
-        planning_element_time_absolute_one: 'Starten för arbetspaketen inom en viss
+        planning_element_time_absolute_one: 'Starten för Äremden inom en viss
           tidsram  '
-        planning_element_time_absolute_two: 'Slutet för arbetspaketen inom en viss
+        planning_element_time_absolute_two: 'Slutet för Äremden inom en viss
           tidsram  '
       sort:
         sortation: Sortera efter
@@ -2234,7 +2234,7 @@ xa:
         days: dagar
         weeks: veckor
         months: månader
-      exclude_own_work_packages: Dölja arbetspaket från detta projekt
+      exclude_own_work_packages: Dölja ärenden från detta projekt
       exclude_reporters: Dölja andra projekt
       exclude_empty: Dölja tomma projekt
       grouping: Gruppering
@@ -2247,12 +2247,12 @@ xa:
       noneSelection: "(ingen)"
       outline: Ursprunglig översikt expansion
       parent: Visa delprojekt för
-      work_package_filters: Filtrera arbetspaket
-      work_package_responsible: Visa arbetspaket med ansvarig
-      work_package_assignee: Visa arbetspaket som tilldelats
+      work_package_filters: Filtrera ärenden
+      work_package_responsible: Visa ärenden med ansvarig
+      work_package_assignee: Visa ärenden som tilldelats
       types: Visa typer
       status: Visa status
-      project_time_filter: Projekt med ett arbetspaket av en viss typ inom en viss
+      project_time_filter: Projekt med ett ärenden av en viss typ inom en viss
         tidsram
       project_time_filter_timeframe: Tidsram
       project_time_filter_historical_from: från
@@ -2272,7 +2272,7 @@ xa:
     history: Historik
     new_color: Ny färg
     new_association: Nytt beroende
-    new_work_package: Nya arbetspaket
+    new_work_package: Nya ärenden
     new_project_type: Ny projekttyp
     new_reporting: Ny rapportering
     new_timeline: Ny tidslinjerapport
@@ -2300,7 +2300,7 @@ xa:
       edit: 'Redigera status: %{comment}'
       show: 'Status: %{comment}'
     planning_element_update: 'Uppdaterad: %{title}'
-    work_packages_are_displayed_in_aggregations: Arbetspaket visas i aggregeringar
+    work_packages_are_displayed_in_aggregations: ärenden visas i aggregeringar
     project_association_new: Lägg till projektberoende
     project_association_new_for_with: Ange beroenden för "%{project_a}" med
     project_association_with_other: Projektetberoende mellan "%{project_a}" och "%{project_b}"
@@ -2322,7 +2322,7 @@ xa:
 
 '
     really_delete_timeline: 'Är du säker på att du vill ta bort följande tidslinjerapport?
-      Arbetspaket som visas denna tidslinjerapport tas inte bort.
+      ärenden som visas denna tidslinjerapport tas inte bort.
 
 '
     really_delete_reporting: 'Är du säker på att du vill ta bort följande rapportering?
@@ -2333,7 +2333,7 @@ xa:
     timeline: Tidslinjerapport
     timelines: Tidslinjerapporter
     settings: Tidslinjer
-    vertical_work_package: Vertikala arbetspaket
+    vertical_work_package: Vertikala ärenden
     without_project_type: Utan projekttyp
     you_are_viewing_the_selected_timeline: Du visar markerad tidslinjerapport
     zoom:
@@ -2401,7 +2401,7 @@ xa:
     settings:
       mail_notifications: Send email notifications
       mail_project_explanaition: For unselected projects, you will only receive notifications
-        about things you watch or you're involved in (e.g. work packages you're the
+        about things you watch or you're involved in (e.g. issues you're the
         author or assignee of).
       mail_self_notified: I want to be notified of changes that I make myself
     status_user_and_brute_force: "%{user} och %{brute_force}"
@@ -2469,13 +2469,13 @@ xa:
         unsupported_context: Resursen som angavs stöds inte som kontext.
         context_object_not_found: Kan inte hitta den angivna resursen som kontext.
       validation:
-        done_ratio: Andel avslutat kan inte anges för överordnade arbetspaket, när
+        done_ratio: Andel avslutat kan inte anges för överordnade ärenden, när
           det är angivet av status eller när det är inaktiverat.
-        due_date: Förfallodatum kan inte anges för överordnade arbetspaket.
-        estimated_hours: Beräknade timmar kan inte anges för överordnade arbetspaket.
+        due_date: Förfallodatum kan inte anges för överordnade ärenden.
+        estimated_hours: Beräknade timmar kan inte anges för överordnade ärenden.
         invalid_user_assigned_to_work_package: Den valda användaren tillåts inte att
-          vara "%{property}" för detta arbetspaket.
-        start_date: Startdatum kan inte anges för överordnade arbetspaket.
+          vara "%{property}" för detta ärenden.
+        start_date: Startdatum kan inte anges för överordnade ärenden.
       writing_read_only_attributes: Du får inte skriva till ett skrivskyddat attribut.
     resources:
       schema: Schema
